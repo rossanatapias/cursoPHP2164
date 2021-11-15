@@ -1,3 +1,21 @@
+<?php 
+      $personas = [
+        'nombre'=>'Rossana Del Paraiso',
+        'apellido'=>'Tapias Rosales',
+        'edad'=>38,
+        'hobbies' => [
+          'a' => 'Leer',
+          'b' => 'Cocinar',
+          'c' => 'Ver series y peliculas',
+          'd'=> 'Ver videos de youtube',
+          'e'=>'Comer',
+        ]
+        'editor'=> 'Visual Studio Code',
+        'so'=> 'Windows 10'
+        ];
+        ?>
+
+
 <!doctype html>
 <html lang="es">
   <head>
@@ -12,6 +30,7 @@
   </head>
   <body>
     <h1>Rossana Tapias Rosales</h1>
+ 
     
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
@@ -22,7 +41,7 @@
       <div class="card">
         <div class="card-body">
             <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
+                <li class="list-group-item">Nombre y Apellido <?php echo $personas['nombre']." ".$personas['apellido']; ?> </li>
                 <li class="list-group-item">A second item</li>
                 <li class="list-group-item">A third item</li>
                 <li class="list-group-item">A fourth item</li>
